@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\VebTech.Core\VebTech.Core.csproj" />
+    <ProjectReference Include="..\VebTech.Data\VebTech.Data.csproj" />
   </ItemGroup>
 
 </Project>

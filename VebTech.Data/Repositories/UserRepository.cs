@@ -21,7 +21,7 @@ namespace VebTech.Data.Repositories
             return user.Id;
         }
 
-        public async Task<User> GetUserAsync(Guid Id)
+        public async Task<User> GetUserByIdAsync(Guid Id)
         {
             try
             {

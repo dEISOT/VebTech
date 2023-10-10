@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VebTech.WebApi", "VebTech.WebApi\VebTech.WebApi.csproj", "{9F9E3026-3EEA-4485-AFC7-57FD62CF6821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VebTech.WebApi", "VebTech.WebApi\VebTech.WebApi.csproj", "{9F9E3026-3EEA-4485-AFC7-57FD62CF6821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VebTech.Core", "VebTech.Core\VebTech.Core.csproj", "{BB29FEBC-E67A-4218-A5BA-9D4B90EA2951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VebTech.Core", "VebTech.Core\VebTech.Core.csproj", "{BB29FEBC-E67A-4218-A5BA-9D4B90EA2951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VebTech.Data", "VebTech.Data\VebTech.Data.csproj", "{D3A0DB4B-46CE-4FDA-9089-1658A609D608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VebTech.Data", "VebTech.Data\VebTech.Data.csproj", "{D3A0DB4B-46CE-4FDA-9089-1658A609D608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VebTech.Model", "VebTech.Model\VebTech.Model.csproj", "{F22D47C4-18F1-4A37-9211-B095ACA77E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VebTech.Model", "VebTech.Model\VebTech.Model.csproj", "{F22D47C4-18F1-4A37-9211-B095ACA77E17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
