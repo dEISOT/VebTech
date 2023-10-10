@@ -1,6 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
-using System.Diagnostics.Metrics;
 using VebTech.Data.Entities;
 
 namespace VebTech.Data.Contexts
@@ -15,6 +13,11 @@ namespace VebTech.Data.Contexts
         {
             Database.EnsureDeleted();
             Database.EnsureCreated();
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
