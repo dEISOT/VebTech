@@ -21,6 +21,10 @@ namespace VebTech.Data.Repositories
             return user.Id;
         }
 
+        public async Task<bool> UserExistsAsync(string email)
+        {
+            return await _db.Users.AnyAsync(u => u.Email == email);
+        }
         public async Task<User> GetUserByIdAsync(Guid Id)
         {
             try
@@ -35,8 +39,23 @@ namespace VebTech.Data.Repositories
             {
                 throw;
             }
-        } 
+        }
 
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            try
+            {
+                return await _db.Users.FirstOrDefaultAsync(u => u.Email.Equals(email));
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                throw new Exception("Record does not exist in the database");
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
         public async Task DeleteUserAsync(Guid Id)
         {
             try

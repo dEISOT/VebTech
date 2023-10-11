@@ -22,14 +22,9 @@ namespace VebTech.Core.Services
             _mapper = mapper;
         }
 
-        public Task<Guid> AddUserAsync(UserDTO user)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task DeleteUserAsync(Guid Id)
         {
-            throw new NotImplementedException();
+            await _userRepository.DeleteUserAsync(Id);
         }
 
         public async Task<UserResponseModel> GetUserByIdAsync(Guid Id)
@@ -39,7 +34,7 @@ namespace VebTech.Core.Services
             
             if (user == null)
             {
-                Log.Information($"user with order id {Id} not found");
+                Log.Information($"User with id {Id} not found");
                 throw new UserNotFoundException();
             }
             

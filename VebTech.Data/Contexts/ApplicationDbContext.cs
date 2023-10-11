@@ -65,10 +65,10 @@ namespace VebTech.Data.Contexts
             modelBuilder.Entity<User>().HasData(
                 new User[]
                 {
-                    new User{Id = new Guid("ef1a0d40-2d0e-488e-aa8d-b822d1a4296a"), Name = "User", Email ="user1@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("User")},
-                    new User{Id = new Guid("e97dfc7d-e0e1-4d4b-9d16-14c0bdaccd66"), Name = "Admin", Email ="user1@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("Admin")},
-                    new User{Id = new Guid("cf4fa1ad-f8fc-4aaa-a9e7-b82baf8f7fb7"), Name = "SupportAndAdmin", Email ="user1@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("SupportAndAdmin")},
-                    new User{Id = new Guid("d30159c4-d99e-4ee0-ae00-686c3db430e4"), Name = "SuperAdmin", Email ="user1@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("SuperAdmin")},
+                    new User{Id = new Guid("ef1a0d40-2d0e-488e-aa8d-b822d1a4296a"), Name = "User", Email ="user@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("User")},
+                    new User{Id = new Guid("e97dfc7d-e0e1-4d4b-9d16-14c0bdaccd66"), Name = "Admin", Email ="admin@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("Admin")},
+                    new User{Id = new Guid("cf4fa1ad-f8fc-4aaa-a9e7-b82baf8f7fb7"), Name = "SupportAndAdmin", Email ="SuperAdminAndAdmin@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("SupportAndAdmin")},
+                    new User{Id = new Guid("d30159c4-d99e-4ee0-ae00-686c3db430e4"), Name = "SuperAdmin", Email ="SuperAdmin@gmail.com", Age = 18, PasswordHash =BCrypt.Net.BCrypt.HashPassword("SuperAdmin")},
                 });
             modelBuilder.Entity<UserRole>().HasData(
                 new UserRole[]

@@ -9,7 +9,7 @@ namespace VebTech.Data.Repositories.Interfaces
         public Task<bool> UpdateUserAsync(User user);
         public Task DeleteUserAsync(Guid Id);
         public Task<Guid> AddUserAsync(User user);
-
-
+        public Task<User> GetUserByEmailAsync(string email);
+        public Task<bool> UserExistsAsync(string email);
     }
 }
