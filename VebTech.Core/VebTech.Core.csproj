@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VebTech.Data\VebTech.Data.csproj" />
+    <ProjectReference Include="..\VebTech.Model\VebTech.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>

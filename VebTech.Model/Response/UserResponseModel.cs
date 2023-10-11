@@ -1,6 +1,4 @@
-﻿using VebTech.Data.Entities;
-
-namespace VebTech.Model.Response
+﻿namespace VebTech.Model.Response
 {
     public class UserResponseModel
     {
@@ -8,6 +6,6 @@ namespace VebTech.Model.Response
         public string Name { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }
-        public IEnumerable<Role> Roles { get; set; }
+        public List<RoleResponseModel> Roles { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace VebTech.Data.Entities
+﻿using System.Text.Json.Serialization;
+
+namespace VebTech.Data.Entities
 {
     public class Role
     {

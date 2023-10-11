@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 //DI
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 
 //Automapper
 builder.Services.AddAutoMapper(typeof(UserProfile));
